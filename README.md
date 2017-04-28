@@ -47,7 +47,7 @@ options = {
 };
 ```
 
-In the same manner, you can provide your `isRevoked` async method to determine if a token is revoked. If the token is not revoked, the promise must resolve with false, otherwise (the promise resolve with true or error) the token is revoked.
+In the same manner, you can provide your `isRevoked` method to determine if a token is revoked. The method can be sync or async (return a promise). If the token is not revoked, the promise must return false or resolve with false. Otherwise (if the promise returns or resolves with true or error) the token is revoked.
 
 ```js
 options = {
