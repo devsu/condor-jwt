@@ -40,7 +40,7 @@ The token will be retrieved from the `authorization` metadata. Anyways, you can 
 
 ```js
 options = {
-  'getToken': (context, options) => {
+  'getToken': (context) => {
     // do your magic here
     return token;
   },
@@ -51,7 +51,7 @@ In the same manner, you can provide your `isRevoked` async method to determine i
 
 ```js
 options = {
-  'isRevoked': (token, context, options) => {
+  'isRevoked': (token, context) => {
     // do your magic here
     return false;
   },
