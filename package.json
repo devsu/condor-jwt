@@ -29,9 +29,18 @@
   },
   "homepage": "https://github.com/devsu/condor-jwt#readme",
   "devDependencies": {
+    "condor-framework": "^1.2.1",
+    "eslint": "^3.19.0",
+    "eslint-config-devsu-node": "0.0.3",
+    "grpc": "^1.3.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.6.0",
+    "jasmine-spy": "0.0.2",
+    "keypair": "^1.0.1",
+    "nsp": "^2.6.3"
   },
   "dependencies": {
-    "jsonwebtoken": "^7.3.0"
+    "jsonwebtoken": "^7.4.0"
   },
   "peerDependencies": {
     "condor-framework": ">= 1.2.0 < 2"
