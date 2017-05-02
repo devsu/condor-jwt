@@ -33,11 +33,9 @@ const app = new Condor()
   .start();
 ```
 
-**IMPORTANT** This middleware does not perform any access control, it just decodes, verifies the token and save it to the context if valid. You can use [condor-authorize](https://github.com/devsu/condor-authorize) middleware to perform the actual authorization.
-
 ## Custom Methods
 
-The token will be retrieved from the `authorization` metadata. Anyways, you can provide your own method to retrieve the token passing the `getToken` option. It must return the token object if found and valid, or null otherwise. The method will be called with the context and middleware options.
+By default, the token will be retrieved from the `authorization` metadata. Also, you can provide your own method to retrieve the token. The method can be sync or async (return a promise). It must return the token object if found and valid, or null otherwise. The method will be called with the context and middleware options.
 
 ```js
 options = {
@@ -48,7 +46,7 @@ options = {
 };
 ```
 
-In the same manner, you can provide your `isRevoked` method to determine if a token is revoked. The method can be sync or async (return a promise). If the token is not revoked, the promise must return false or resolve with false. Otherwise (if the promise returns or resolves with true or error) the token is revoked.
+In the same manner, you can provide your `isRevoked` method to determine if a token is revoked. The method can be sync or async (return a promise). If the token is not revoked, the method must return false or resolve with false.
 
 ```js
 options = {
