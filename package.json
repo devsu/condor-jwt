@@ -1,6 +1,6 @@
 {
   "name": "condor-jwt",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Condor JWT authentication Middleware",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,8 @@
     "jasmine": "^2.6.0",
     "jasmine-spy": "0.0.2",
     "keypair": "^1.0.1",
-    "nsp": "^2.6.3"
+    "nsp": "^2.6.3",
+    "proxyquire": "^1.7.11"
   },
   "dependencies": {
     "jsonwebtoken": "^7.4.0"

@@ -1,3 +1,7 @@
-const jwt = require('./lib/jwt');
+const JWT = require('./lib/jwt');
 
-module.exports = jwt;
+exports = module.exports = (options) => {
+  return new JWT(options).getMiddleware();
+};
+
+exports.JWT = JWT;
