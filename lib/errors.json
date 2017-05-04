@@ -1,6 +1,0 @@
-{
-  "TOKEN_REQUIRED": "token string is required",
-  "KEY_REQUIRED": "options.secretOrPublicKey is required to verify the token",
-  "INVALID_TOKEN": "Invalid Token",
-  "UNAUTHENTICATED": "Unauthenticated"
-}
