@@ -1,6 +1,6 @@
 {
   "name": "condor-jwt",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Condor JWT authentication Middleware",
   "main": "index.js",
   "scripts": {
@@ -31,6 +31,7 @@
   "devDependencies": {
     "condor-context-test-helper": "0.0.1",
     "condor-framework": "^1.2.1",
+    "coveralls": "^2.13.1",
     "eslint": "^3.19.0",
     "eslint-config-devsu-node": "0.0.3",
     "istanbul": "^0.4.5",
@@ -39,11 +40,11 @@
     "keypair": "^1.0.1",
     "nsp": "^2.6.3",
     "proxyquire": "^1.7.11",
-    "simple-bearer-token-test-helper": "0.0.1"
+    "simple-bearer-token-test-helper": "0.0.3"
   },
   "dependencies": {
     "jsonwebtoken": "^7.4.0",
-    "simple-bearer-token": "0.0.1"
+    "simple-bearer-token": "0.0.2"
   },
   "peerDependencies": {
     "condor-framework": ">= 1.2.0 < 2"
