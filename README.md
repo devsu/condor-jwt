@@ -35,11 +35,11 @@ const app = new Condor()
 
 ## Custom Methods
 
-By default, the token will be retrieved from the `authorization` metadata. Also, you can provide your own method to retrieve the token. The method can be sync or async (return a promise). It must return the token object if found and valid, or null otherwise. The method will be called with the context and middleware options.
+By default, the token will be retrieved from the `authorization` metadata. Also, you can provide your own method to retrieve the token. The method can be sync or async (return a promise). It must return the token object if found and valid, or null otherwise. The method will be called with the context.
 
 ```js
 options = {
-  'getToken': (context, options) => {
+  'getToken': (context) => {
     // do your magic here
     return token;
   },
